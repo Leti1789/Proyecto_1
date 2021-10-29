@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/23386119ae.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/23386119ae.js" crossorigin="anonymous"></script>
+    
+	<link href = "https: //fonts.googleapis.com/css2? family = Be + Vietnam + Pro: wght @ 100 & display = swap "rel =" stylesheet ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="icon" href="imagen mano-pata.ico">
+    <link href = "https: //fonts.googleapis.com/css2? family = Playfair + Display: ital, wght @ 1,500 & display = swap "rel =" stylesheet ">
+	<link href = "https: //fonts.googleapis.com/css2? family = Fira + Sans + Condensed: wght @ 300 & family = Playfair + Display: ital, wght @ 1,500 & family = Zen + Old + Mincho & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet"  href="estilos.css">
+    
+    <title>Protectora. "Amigos de los animales"</title>
+   
+</head>
+<div class="contenedor">
+    <header class="encabezado">
+        <img id="logo" src="imagen mano-pata.png"  alt="">
+        <a id="nombre" href="#">Protectora."Amigos de los animales"</a>
+      
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="fas fa-bars"></i></label>
+        <nav class="navbar">
+            <ul class="lista1">
+                <li><a href="index.html" class="link">Inicio</a></li>
+                <li><a href="Legislacion.html"class="link">Legislacion</a></li>
+                <li><a href="como_ayudar.html" class="link">Como ayudar <i class="fas fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="como_ayudar.html#apadrina a un perrito">Apadrina a un perrito</a></li>
+                        <li><a href="como_ayudar.html#adopta">Adopta</a></li>
+                        <li><a href="como_ayudar.html#dona">Dona</a></li>
+                        <li><a href="como_ayudar.html#hacete voluntario">Hacete voluntario</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html" class="link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <section class="contenido">
+        <article class="articulo">
+            <div class="formulario">
+            <h1 class="titulo">Asociate:</h1><br><br>
+            <h4 class="subtitulo"><b>Para hacerte socio de la protectora llena el siguiente formulario con los datos correspondientes:</b></h4><br><br>
+            
+            <form action="" name="formulario" id="formulario" method="get">
+                <script src="validacion.js"></script>
+                <fieldset>
+                <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre...">
+                </div>
+                <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresa tu apellido..."><br><br>
+                </div>
+                <div class="mb-3">
+                <label for="telefono" class="form-label">Telefono:</label>
+                <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su telefono...">
+                </div>
+                <div class="mb-3">
+                <label for="dni" class="form-label">D.N.I:</label>
+                <input type="number" class="form-control" id="dni" name="dni" placeholder="Ingrese su numero de D.N.I..."><br><br>
+                </div>
+                <div class="mb-3">
+                <label for="direccion" class="form-label">Direccion:</label>
+                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="ingrese su direccion...">
+                </div>
+                <div class="mb-3">
+                <label for="correo" class="form-label">Correo electronico:</label>
+                <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo electronico..."><br><br>
+               </div>
+               <div class="form-check">
+                <label for="cuota" class="form-label">Seleccione el monto que desea abonar:</label><br>
+                <input class="form-check-input" type="radio" name="cuota" id="cuota1" value="monto1">
+                <label class="form-check-lebel" for="cuota">50$</label> 
+               </div>
+               <div class="form-check">
+                <input class="form-check-input" type="radio" name="cuota" id="cuota2" value="monto2">
+                <label class="form-check-lebel" for="cuota">100$</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cuota" id="cuota3" value="monto3">
+                <label class="form-check-lebel" for="cuota">150$</label>
+                </div><br>
+                <div class="mb-3">
+                <label for="comentario" class="form-label">Dejanos un comentario:</label><br><br>
+                <textarea class="form-control" id="comentario"  rows="3" placeholder="Escribe aqui..."></textarea><br><br>
+                </div><br>
+                <button type="submit" id="enviar" name="enviar" class="btn btn-primary">Enviar</button>
+                <button id="reset" class="btn btn-success">Borrar</button>
+            </form>
+        </div>
+        </article>
+    </section>
+     
+    <aside class="aside">
+        <div class="imagen">
+            <img src="confraternidad.jpg" width="300" alt="Fiesta de la confraternidad"> <br><br><br>
+
+        </div>
+        
+            <div class="contenedor1">
+            <h3 class="neon"> Ayudanos a seguir con esta labor social</h3>
+           </div> <br><br>
+         <div class="imagen">   
+            <img src="ceres_castraciones.jpg"  width ="400" alt="Jornada de castraciones">
+
+        </div>
+        </aside>
+        <footer class="footer">
+			<section class="links">
+				<a href="index.html">Inicio</a>
+				<a href="Legislacion.html">Legislacion</a>
+				<a href="como_ayudar.html">Como ayudar</a>
+				<a href="contacto.html">Contacto</a>
+			</section>
+            <div class="social">
+				<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://twitter.com/iniciarsesion?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+			<div class="pie">
+				<p class="copy">Asociacion Protectora: "Amigos de los animales". Ceres. Santa fe. Argentina.@ 2021 Todos los derechos reservados</p>
+			</div>
+		</footer>
+</body>
+</html>
